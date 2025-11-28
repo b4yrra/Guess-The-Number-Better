@@ -47,4 +47,6 @@ function checkGuess() {
   }
 
   attemptsText.textContent = "Attempts: " + attempts;
+
+  guess.value = "";
 }

@@ -16,6 +16,7 @@ const closePopup = document.getElementById("closePopup");
 const overlay = document.getElementById("overlay");
 
 submit.addEventListener("click", checkGuess);
+
 closePopup.addEventListener("click", () => {
   popup.classList.remove("show");
   overlay.classList.remove("show");
@@ -47,4 +48,6 @@ function checkGuess() {
   }
 
   attemptsText.textContent = "Attempts: " + attempts;
+
+  guess.value = "";
 }
