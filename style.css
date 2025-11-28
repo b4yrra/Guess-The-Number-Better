@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45vh;
+  background: linear-gradient(
+    to right,
+    #fc72ff,
+    #8f68ff,
+    #487bff,
+    #8f68ff,
+    #fc72ff
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Science Gothic", sans-serif;
+  font-size: 80px;
+  animation: gradient-light 3s linear infinite;
+  background-size: 200%;
+}
+
+@keyframes gradient-light {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 200%;
+  }
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.Btn {
+  font-size: 40px;
+  text-decoration: none;
+  font-family: "Science Gothic", sans-serif;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: none;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.easy {
+  background-color: darkgreen;
+}
+
+.medium {
+  background-color: darkorange;
+}
+
+.hard {
+  background-color: darkred;
+}
+
+.Btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.easy:hover {
+  color: greenyellow;
+  box-shadow: 0 0 5px #2cff05, 0 0 25px #2cff05, 0 0 50px #2cff05,
+    0 0 260px #2cff05;
+}
+
+.medium:hover {
+  color: yellow;
+  box-shadow: 0 0 5px #ff5c00, 0 0 25px #ff5c00, 0 0 50px #ff5c00,
+    0 0 260px #ff5c00;
+}
+
+.hard:hover {
+  color: orange;
+  box-shadow: 0 0 5px #ff3131, 0 0 25px #ff3131, 0 0 50px #ff3131,
+    0 0 260px #ff3131;
+}
