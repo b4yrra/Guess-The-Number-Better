@@ -4,7 +4,7 @@ document.getElementById("backBtn").onclick = () => {
 
 let attempts = 0;
 let running = true;
-let value = Math.floor(Math.random() * 10) + 1;
+let value = Math.floor(Math.random() * 50) + 1;
 
 const guess = document.getElementById("guess");
 const submit = document.getElementById("submitBtn");
@@ -32,8 +32,8 @@ function checkGuess() {
   const userValue = Number(guess.value);
   attempts++;
 
-  if (userValue < 1 || userValue > 10) {
-    window.alert(`Please pick a number between 1 to 10`);
+  if (userValue < 1 || userValue > 50) {
+    window.alert(`Please pick a number between 1 to 50`);
     return;
   }
 

@@ -3,9 +3,9 @@ document.getElementById("easyBtn").onclick = () => {
 };
 
 document.getElementById("mediumBtn").onclick = () => {
-  location.href = "easy/medium.html";
+  location.href = "medium/medium.html";
 };
 
 document.getElementById("hardBtn").onclick = () => {
-  location.href = "easy/hard.html";
+  location.href = "hard/hard.html";
 };

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="100%, initial-scale=1.0" />
+    <title>Hard Mode</title>
+    <link rel="stylesheet" href="./hard.css" />
+  </head>
+  <body>
+    <h1 class="header">GUESS THE NUMBER</h1>
+    <p>Guess The Number Between 1-100</p>
+    <div class="main-section">
+      <input
+        class="typing"
+        type="number"
+        placeholder="Enter a number"
+        id="guess"
+        min="1"
+        max="10"
+      />
+    </div>
+    <div class="footer">
+      <button class="submitBtn border" id="submitBtn">SUBMIT</button>
+      <button class="backBtn border" id="backBtn">BACK</button>
+    </div>
+    <p id="hint"></p>
+    <p id="attempts"></p>
+    <div id="overlay"></div>
+    <div id="popup">
+      <p id="popupMessage"></p>
+      <button id="closePopup">Close</button>
+    </div>
+    <script src="./hard.js"></script>
+  </body>
+</html>
