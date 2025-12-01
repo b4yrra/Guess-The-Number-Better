@@ -2,7 +2,7 @@ document.getElementById("backBtn").onclick = () => {
   location.href = "../index.html";
 };
 
-let attempts = 0;
+let attempts = 5;
 let running = true;
 let value = Math.floor(Math.random() * 10) + 1;
 
@@ -31,7 +31,7 @@ function showPopup(message) {
 
 function checkGuess() {
   const userValue = Number(guess.value);
-  attempts++;
+  attempts--;
 
   if (userValue < 1 || userValue > 10) {
     window.alert(`Please pick a number between 1 to 10`);
@@ -45,6 +45,10 @@ function checkGuess() {
     hint.textContent = "Too low, try again!";
   } else if (userValue > value) {
     hint.textContent = "Too high, try again!";
+  }
+
+  if (attempts === 0) {
+    showPopup("You Lose ✖️");
   }
 
   attemptsText.textContent = "Attempts: " + attempts;
